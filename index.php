@@ -1049,6 +1049,7 @@ $services = [
     </div>
     <div class="nav">
         <a href="#planning">Planning</a>
+            <a href="#pricing">Tarifs</a>  <!-- AJOUTEZ CETTE LIGNE -->
         <a href="#services">Services</a>
         <a href="#gallery">Galerie</a>
         <a href="#maps">Nous trouver</a>
@@ -1120,7 +1121,89 @@ $services = [
         Ouvert tous les jours de <?php echo $gym_hours; ?>
     </div>
 </section>
-
+<!-- ===== TARIFS ===== -->
+<section id="pricing" class="pricing-section" style="background: #ddd6cd; padding: 60px 30px; border-radius: 0; margin: 0; width: 100%; max-width: 100%;">
+    <div class="section-title-left">
+        <span class="light">Nos</span>
+        <span class="heavy">Tarifs</span>
+    </div>
+    <div class="section-desc-left">Des formules adaptées à tous les besoins</div>
+    
+    <div class="pricing-frame" style="background: #cbc2b7; border-radius: 18px; padding: 24px;">
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:1200px; margin:0 auto;">
+            
+            <!-- ===== CARTE 1 : Sport de Combat Enfant ===== -->
+            <div style="background:#fff; border-radius:16px; padding:30px 20px; text-align:center; border:3px solid rgba(255,255,255,0.6); box-shadow:0 8px 30px rgba(0,0,0,0.14);">
+                <div style="width:65px; height:65px; border-radius:50%; background:#3b6e8f; display:flex; align-items:center; justify-content:center; margin:0 auto 10px; color:#fff; font-size:26px;">
+                    <i class="fa-solid fa-child"></i>
+                </div>
+                <div style="font-size:18px; font-weight:700; color:#1a1a2e; letter-spacing:1px; text-transform:uppercase; margin-bottom:3px;">Sport de Combat</div>
+                <div style="font-size:16px; font-weight:700; color:#1a1a2e; margin-bottom:12px;">Enfant</div>
+                
+                <div style="margin-bottom:15px;">
+                    <div style="font-size:14px; color:#7d868c; margin-bottom:2px;">Séance à l'unité</div>
+                    <div style="font-size:32px; font-weight:800; color:#3b6e8f;">500 DA</div>
+                </div>
+                
+                <div style="border-top:2px solid rgba(0,0,0,0.08); padding-top:15px; margin-bottom:12px;">
+                    <div style="font-size:15px; font-weight:600; color:#1a1a2e; margin-bottom:8px;">Forfaits mensuels</div>
+                    <div style="display:flex; justify-content:space-around; font-size:15px; font-weight:700; color:#1a1a2e;">
+                        <div>4 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">2 000 DA</span></div>
+                        <div>8 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 000 DA</span></div>
+                        <div>12 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">4 000 DA</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ===== CARTE 2 : Fitness ===== -->
+            <div style="background:#fff; border-radius:16px; padding:30px 20px; text-align:center; border:3px solid #3b6e8f; box-shadow:0 8px 30px rgba(59,110,143,0.2);">
+                <div style="width:65px; height:65px; border-radius:50%; background:#3b6e8f; display:flex; align-items:center; justify-content:center; margin:0 auto 10px; color:#fff; font-size:26px;">
+                    <i class="fa-solid fa-person-walking"></i>
+                </div>
+                <div style="font-size:18px; font-weight:700; color:#1a1a2e; letter-spacing:1px; text-transform:uppercase; margin-bottom:3px;">Fitness</div>
+                <div style="font-size:14px; color:#7d868c; margin-bottom:12px;">Zumba / Pilates</div>
+                
+                <div style="margin-bottom:15px;">
+                    <div style="font-size:14px; color:#7d868c; margin-bottom:2px;">Séance à l'unité</div>
+                    <div style="font-size:32px; font-weight:800; color:#3b6e8f;">500 DA</div>
+                </div>
+                
+                <div style="border-top:2px solid rgba(0,0,0,0.08); padding-top:15px; margin-bottom:12px;">
+                    <div style="font-size:15px; font-weight:600; color:#1a1a2e; margin-bottom:8px;">Forfaits mensuels (30 jours)</div>
+                    <div style="display:flex; justify-content:space-around; font-size:15px; font-weight:700; color:#1a1a2e;">
+                        <div>4 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">2 000 DA</span></div>
+                        <div>8 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 000 DA</span></div>
+                        <div>12 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 500 DA</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ===== CARTE 3 : Musculation / Cardio ===== -->
+            <div style="background:#fff; border-radius:16px; padding:30px 20px; text-align:center; border:3px solid rgba(255,255,255,0.6); box-shadow:0 8px 30px rgba(0,0,0,0.14);">
+                <div style="width:65px; height:65px; border-radius:50%; background:#3b6e8f; display:flex; align-items:center; justify-content:center; margin:0 auto 10px; color:#fff; font-size:26px;">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div style="font-size:18px; font-weight:700; color:#1a1a2e; letter-spacing:1px; text-transform:uppercase; margin-bottom:3px;">Musculation / Cardio</div>
+                <div style="font-size:14px; color:#7d868c; margin-bottom:12px;">CrossFit / HIIT / Cardio</div>
+                
+                <div style="margin-bottom:15px;">
+                    <div style="font-size:14px; color:#7d868c; margin-bottom:2px;">Séance à l'unité</div>
+                    <div style="font-size:32px; font-weight:800; color:#3b6e8f;">500 DA</div>
+                </div>
+                
+                <div style="border-top:2px solid rgba(0,0,0,0.08); padding-top:15px; margin-bottom:12px;">
+                    <div style="font-size:15px; font-weight:600; color:#1a1a2e; margin-bottom:8px;">Forfaits mensuels</div>
+                    <div style="display:flex; justify-content:space-around; font-size:15px; font-weight:700; color:#1a1a2e;">
+                        <div>8 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">2 200 DA</span></div>
+                        <div>12 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">1 500 DA</span></div>
+                        <div>Illimité<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 200 DA</span></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 <!-- ===== SERVICES - AVEC CADRE (RECTANGLE) ===== -->
 <section id="services" class="services-section">
     <div class="section-title-left">
