@@ -1033,6 +1033,36 @@ $services = [
             .lightbox { padding:20px; }
             .lightbox-close { top:15px; right:20px; font-size:30px; }
         }
+        /* ===== TARIFS RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .pricing-frame > div {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-frame > div {
+        grid-template-columns: 1fr !important;
+    }
+    .pricing-frame {
+        padding: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-frame {
+        padding: 10px !important;
+    }
+    .pricing-frame > div > div {
+        padding: 20px 15px !important;
+    }
+    .pricing-frame > div > div div[style*="font-size:32px"] {
+        font-size: 28px !important;
+    }
+    .pricing-frame > div > div div[style*="font-size:20px"] {
+        font-size: 17px !important;
+    }
+}
 </style>
 </head>
 <body>
