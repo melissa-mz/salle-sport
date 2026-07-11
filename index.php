@@ -1258,7 +1258,6 @@ $services = [
                         <div class="service-icon">— <?php echo $service['tag']; ?> —</div>
                         <h3><?php echo $service['nom']; ?></h3>
                         <p><?php echo $service['description']; ?></p>
-                        <span class="service-tag">En savoir plus</span>
                     </div>
                 </div>
             <?php endforeach; ?>
