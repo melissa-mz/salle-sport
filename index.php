@@ -2,7 +2,7 @@
 // === DONNÉES ===
 $gym_name = "BLUE BIRD FITNESS";
 $gym_address = "lot N1, Ecole omar tadrist N22, Bouzareah 16032";
-$gym_phone = "0550 31 91 30";
+$gym_phone = "0540968081";
 $gym_instagram = "https://www.instagram.com/blubird_fitness/";
 $gym_hours = "07h00 - 23h00";
 $google_maps_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.123456789!2d3.0200447!3d36.7877987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bb44f2cc5177e61!2sBlue%20Bird%20Fitness!5e0!3m2!1sfr!2sdz!4v1234567890";
@@ -72,7 +72,7 @@ $services = [
         "tag" => "Enfants"
     ],
     [
-        "nom" => "MMA (Hommes & Femmes)",
+        "nom" => "MMA (Hommes)",
         "description" => "Arts martiaux mixtes pour tous - Self-défense et discipline",
         "image" => "images/mma.jpg",
         "tag" => "Combat"
