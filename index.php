@@ -1,45 +1,46 @@
 <?php
 // === DONNÉES ===
-$gym_name = "BLUE BIRD FITNESS";
-$gym_address = "lot N1, Ecole omar tadrist N22, Bouzareah 16032";
-$gym_phone = "0540968081";
-$gym_instagram = "https://www.instagram.com/blubird_fitness/";
-$gym_hours = "07h00 - 23h00";
-$google_maps_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.123456789!2d3.0200447!3d36.7877987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bb44f2cc5177e61!2sBlue%20Bird%20Fitness!5e0!3m2!1sfr!2sdz!4v1234567890";
+$gym_name = "BODY POWER GYM";
+$gym_address = "29 Rue Hocine Bouchachi, Bouzareah";
+$gym_phone = "0656 15 12 87";
+$gym_instagram = "https://www.instagram.com/bodypowergym03/";
+$gym_hours = "10h00 - 22h00";
+$google_maps_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.123456789!2d3.0063976!3d36.7864712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb3a7bfead6a3%3A0x7aa13383851a846d!2sBody%20power%20gym!5e0!3m2!1sfr!2sdz!4v1234567890";
 
 // === IMAGES DE LA GALERIE ===
 $gallery_images = [
-    "images/bleubird.png",
-    "images/bleubird1.png",
-    "images/bleubird2.png",
-    "images/bleubird3.png",
-    "images/bleubird4.png",
-    "images/bleubird5.png",
-    "images/bleubird6.png",
-    "images/bleubird7.png",
-    "images/bleubird8.png"
-];
+        "images/salle0.png",
+    "images/salle7.png",
 
+"images/salle.jpg",
+    "images/salle1.png",
+    "images/salle2.png",
+    "images/salle3.png",
+    "images/salle4.png",
+    "images/salle5.png",
+    "images/salle6.png"
+];
+// === PLANNING FEMMES (modifié) ===
 $planning_femmes = [
-    "Dimanche" => "09h00 - 16h00",
-    "Lundi" => "12h00 - 19h00",
-    "Mardi" => "09h00 - 14h00",
-    "Mercredi" => "12h00 - 19h00",
-    "Jeudi" => "09h00 - 16h00",
-    "Vendredi" => "09h00 - 12h00",
-    "Samedi" => "12h00 - 19h00"
+    "Samedi" => "08h00 - 12h00",
+    "Mardi" => "15h30 - 19h30",
+    "Mercredi" => "17h30 - 19h30",
+    "Jeudi" => "08h00 - 12h00",
+    "Vendredi" => "14h00 - 18h00"
 ];
 
+// === PLANNING HOMMES (gardé mais avec vos horaires) ===
 $planning_hommes = [
-    "Dimanche" => "16h00 - 23h00",
-    "Lundi" => ["09h00 - 12h00", "19h00 - 23h00"],
-    "Mardi" => "14h00 - 23h00",
-    "Mercredi" => ["09h00 - 12h00", "19h00 - 23h00"],
-    "Jeudi" => "16h00 - 23h00",
-    "Vendredi" => "15h00 - 23h00",
-    "Samedi" => ["09h00 - 12h00", "19h00 - 23h00"]
+    "Dimanche" => "16h00 - 22h00",
+    "Lundi" => ["09h00 - 12h00", "19h00 - 22h00"],
+    "Mardi" => "14h00 - 22h00",
+    "Mercredi" => ["09h00 - 12h00", "19h00 - 22h00"],
+    "Jeudi" => "16h00 - 22h00",
+    "Vendredi" => "15h00 - 22h00",
+    "Samedi" => ["09h00 - 12h00", "19h00 - 22h00"]
 ];
 
+// === SERVICES (enlevé MMA, Kick, Judo Kids et Fitness Kids) ===
 $services = [
     [
         "nom" => "CrossFit",
@@ -64,30 +65,6 @@ $services = [
         "description" => "Renforcement musculaire doux et amélioration de la posture",
         "image" => "images/pilats.jpg",
         "tag" => "Bien-être"
-    ],
-    [
-        "nom" => "Fitness Kids",
-        "description" => "Activités ludiques pour développer la motricité des enfants",
-        "image" => "images/fitness.jpg",
-        "tag" => "Enfants"
-    ],
-    [
-        "nom" => "MMA (Hommes)",
-        "description" => "Arts martiaux mixtes pour tous - Self-défense et discipline",
-        "image" => "images/mma.jpg",
-        "tag" => "Combat"
-    ],
-    [
-        "nom" => "Kick Boxing (Hommes & Femmes)",
-        "description" => "Boxe pieds-poings pour hommes et femmes - Cardio et défense",
-        "image" => "images/kick.jpg",
-        "tag" => "Cardio"
-    ],
-    [
-        "nom" => "Judo Kids",
-        "description" => "Art martial éducatif pour enfants - Discipline et respect",
-        "image" => "images/judo.jpg",
-        "tag" => "Enfants"
     ]
 ];
 ?>
@@ -97,7 +74,7 @@ $services = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $gym_name; ?></title>
-      <link rel="icon" type="image/jfif" href="images/logo.jfif">
+    <link rel="icon" type="image/jpg" href="images/logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         /* ===== RESET ===== */
@@ -114,23 +91,22 @@ $services = [
             -webkit-font-smoothing:antialiased;
         }
 
-        /* ===== HEADER - NOIR & BLEU IMPOSANT ===== */
+        /* ===== HEADER ===== */
         header {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:20px 60px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index:1000;
-    background: #0b0d10;
-    /* border-bottom:2px solid #3b6e8f;  ← SUPPRIMÉ */
-    box-shadow: 0 2px 20px rgba(0,0,0,0.3);  /* Ombre plus douce */
-}
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            z-index:1000;
+            background: #0b0d10;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
 
-        /* ===== LOGO AVEC IMAGE EN CERCLE + TEXTE ===== */
+        /* ===== LOGO ===== */
         .logo {
             display: flex;
             align-items: center;
@@ -225,47 +201,47 @@ $services = [
             display:flex;
             align-items:flex-start;
             justify-content:center;
-            padding:110px 0 0;  /* Augmenté pour espacer du header */
+            padding:110px 0 0;
         }
 
         /* ===== HERO ===== */
-.hero {
-    width:100%;
-    max-width:100%;
-    height:70vh;
-    min-height:480px;
-    display:flex;
-    align-items:center;
-    padding:50px 70px;
-    gap:60px;
-    position:relative;
-    overflow:hidden;
-    border-radius: 0;  /* Changé de 20px à 0 */
-    background: #0b0d10;
-    border:1px solid rgba(255,255,255,0.04);
-}
+        .hero {
+            width:100%;
+            max-width:100%;
+            height:70vh;
+            min-height:480px;
+            display:flex;
+            align-items:center;
+            padding:50px 70px;
+            gap:60px;
+            position:relative;
+            overflow:hidden;
+            border-radius: 0;
+            background: #0b0d10;
+            border:1px solid rgba(255,255,255,0.04);
+        }
 
-.hero-video {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:0;
-    object-fit:cover;
-    border-radius: 0;  /* Changé de 20px à 0 */
-}
+        .hero-video {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            z-index:0;
+            object-fit:cover;
+            border-radius: 0;
+        }
 
-.hero-overlay-light {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:1;
-    background: rgba(0,0,0,0.40);
-    border-radius: 0;  /* Changé de 20px à 0 */
-}
+        .hero-overlay-light {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            z-index:1;
+            background: rgba(0,0,0,0.40);
+            border-radius: 0;
+        }
         .hero-text {
             flex:1.2;
             max-width:700px;
@@ -476,7 +452,23 @@ $services = [
             display:block;
         }
 
-        /* ===== SERVICES - AVEC CADRE (RECTANGLE) ===== */
+        /* ===== TARIFS ===== */
+        .pricing-section {
+            background: #ddd6cd;
+            padding: 60px 30px;
+            border-radius: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .pricing-frame {
+            background: #cbc2b7;
+            border-radius: 18px;
+            padding: 24px;
+        }
+
+        /* ===== SERVICES ===== */
         .services-section {
             background: #ddd6cd;
             padding:60px 30px 80px;
@@ -880,11 +872,8 @@ $services = [
         }
 
         /* ===== RESPONSIVE ===== */
-        /* Tablettes et petits écrans */
         @media (max-width:992px) {
-            header {
-                padding: 18px 40px;
-            }
+            header { padding: 18px 40px; }
             .hero {
                 flex-direction:column;
                 padding:40px 40px;
@@ -896,9 +885,7 @@ $services = [
             .hero-text { max-width:100%; text-align:center; }
             .hero-text .btn-group { justify-content:center; }
             .hero-text h1 { font-size:3.5rem; }
-            .hero-wrapper { 
-                padding: 100px 0 40px;
-            }
+            .hero-wrapper { padding: 100px 0 40px; }
             .maps-container { grid-template-columns:1fr; gap:25px; }
             .maps-details { padding:25px 20px; }
             .maps-frame { min-height:300px; }
@@ -911,44 +898,19 @@ $services = [
             section { padding:60px 30px; }
             .gallery-carousel-slide { min-width:50%; }
             .gallery-carousel-slide img { aspect-ratio:1/1; }
+            .pricing-frame > div { grid-template-columns: repeat(2, 1fr) !important; }
         }
 
-        /* Mobiles */
         @media (max-width:768px) {
-            header { 
-                padding: 16px 25px; 
-                flex-wrap: wrap; 
-                gap: 10px;
-            }
-            .logo a { 
-                gap: 10px; 
-            }
-            .logo-img { 
-                width: 55px; 
-                height: 55px; 
-            }
-            .logo-text { 
-                font-size: 18px; 
-                letter-spacing: 2px; 
-            }
-            .logo-text span { 
-                letter-spacing: 3px; 
-            }
-            .nav { 
-                gap: 14px; 
-                flex-wrap: wrap; 
-            }
-            .nav a { 
-                font-size: 11px; 
-                letter-spacing: 1px; 
-            }
-            .nav .phone { 
-                padding: 6px 16px; 
-                font-size: 11px; 
-            }
-            .hero-wrapper { 
-                padding: 90px 0 30px;
-            }
+            header { padding: 16px 25px; flex-wrap: wrap; gap: 10px; }
+            .logo a { gap: 10px; }
+            .logo-img { width: 55px; height: 55px; }
+            .logo-text { font-size: 18px; letter-spacing: 2px; }
+            .logo-text span { letter-spacing: 3px; }
+            .nav { gap: 14px; flex-wrap: wrap; }
+            .nav a { font-size: 11px; letter-spacing: 1px; }
+            .nav .phone { padding: 6px 16px; font-size: 11px; }
+            .hero-wrapper { padding: 90px 0 30px; }
             section { padding:40px 20px; }
             .services-section { padding:40px 20px 50px; }
             .services-frame { padding:14px; border-radius:14px; }
@@ -972,37 +934,17 @@ $services = [
             .hero { padding:30px 25px; }
             .hero-text .btn-primary, .hero-text .btn-secondary { padding:14px 30px; font-size:12px; }
             .planning-grid-duo { grid-template-columns:1fr; gap:20px; }
+            .pricing-frame > div { grid-template-columns: 1fr !important; }
+            .pricing-frame { padding: 14px !important; }
         }
 
-        /* Très petits écrans */
         @media (max-width:480px) {
-            header { 
-                padding: 12px 15px;
-                flex-wrap: wrap;
-                gap: 8px;
-            }
-            .logo a { 
-                gap: 8px; 
-            }
-            .logo-img { 
-                width: 45px; 
-                height: 45px; 
-            }
-            .logo-text { 
-                font-size: 14px; 
-                letter-spacing: 1px; 
-            }
-            .logo-text span { 
-                letter-spacing: 2px; 
-            }
-            /* ===== WRAPPER ===== */
-.hero-wrapper {
-    flex:1;
-    display:flex;
-    align-items:flex-start;
-    justify-content:center;
-    padding: 130px 0 0;  /* Augmenté de 110px à 130px */
-}
+            header { padding: 12px 15px; flex-wrap: wrap; gap: 8px; }
+            .logo a { gap: 8px; }
+            .logo-img { width: 45px; height: 45px; }
+            .logo-text { font-size: 14px; letter-spacing: 1px; }
+            .logo-text span { letter-spacing: 2px; }
+            .hero-wrapper { padding: 130px 0 0; }
             .services-grid { grid-template-columns:1fr; }
             .service-card { min-height:200px; aspect-ratio:4/3; }
             .service-card .service-content { padding:18px 16px 20px; }
@@ -1032,54 +974,28 @@ $services = [
             .planning-item .hours { font-size:16px; }
             .lightbox { padding:20px; }
             .lightbox-close { top:15px; right:20px; font-size:30px; }
+            .pricing-frame { padding: 10px !important; }
+            .pricing-frame > div > div { padding: 20px 15px !important; }
+            .pricing-frame > div > div div[style*="font-size:32px"] { font-size: 28px !important; }
+            .pricing-frame > div > div div[style*="font-size:20px"] { font-size: 17px !important; }
         }
-        /* ===== TARIFS RESPONSIVE ===== */
-@media (max-width: 992px) {
-    .pricing-frame > div {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-@media (max-width: 768px) {
-    .pricing-frame > div {
-        grid-template-columns: 1fr !important;
-    }
-    .pricing-frame {
-        padding: 14px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .pricing-frame {
-        padding: 10px !important;
-    }
-    .pricing-frame > div > div {
-        padding: 20px 15px !important;
-    }
-    .pricing-frame > div > div div[style*="font-size:32px"] {
-        font-size: 28px !important;
-    }
-    .pricing-frame > div > div div[style*="font-size:20px"] {
-        font-size: 17px !important;
-    }
-}
-</style>
+    </style>
 </head>
 <body>
 
-<!-- ===== HEADER - NOIR & BLEU IMPOSANT ===== -->
+<!-- ===== HEADER ===== -->
 <header>
     <div class="logo">
         <a href="#home" style="text-decoration:none;display:flex;align-items:center;gap:12px;">
-            <img src="images/logo.jfif"  alt="Blue Bird Fitness" class="logo-img">
+            <img src="images/logo.jpg" alt="Body Power Gym" class="logo-img">
             <span style="font-size:22px;font-weight:800;letter-spacing:4px;color:#f0f2f3;text-transform:uppercase;">
-                Blue <span style="color:#3b6e8f;font-weight:300;letter-spacing:6px;">Bird</span>
+                Body <span style="color:#3b6e8f;font-weight:300;letter-spacing:6px;">Power</span>
             </span>
         </a>
     </div>
     <div class="nav">
         <a href="#planning">Planning</a>
-            <a href="#pricing">Tarifs</a>  <!-- AJOUTEZ CETTE LIGNE -->
+        <a href="#pricing">Tarifs</a>
         <a href="#services">Services</a>
         <a href="#gallery">Galerie</a>
         <a href="#maps">Nous trouver</a>
@@ -1098,8 +1014,8 @@ $services = [
         <div class="hero-text">
             <div class="tag">Salle de sport</div>
             <h1>
-                <span class="white">Blue Bird</span>
-                <span class="gradient">Fitness</span>
+                <span class="white">Body</span>
+                <span class="gradient">Power</span>
             </h1>
             <div class="sub">Votre salle de sport à Bouzareah — Des cours pour tous les niveaux</div>
             <div class="btn-group">
@@ -1151,96 +1067,63 @@ $services = [
         Ouvert tous les jours de <?php echo $gym_hours; ?>
     </div>
 </section>
+
 <!-- ===== TARIFS ===== -->
-<section id="pricing" class="pricing-section" style="background: #ddd6cd; padding: 60px 30px; border-radius: 0; margin: 0; width: 100%; max-width: 100%;">
+<section id="pricing" class="pricing-section">
     <div class="section-title-left">
         <span class="light">Nos</span>
         <span class="heavy">Tarifs</span>
     </div>
     <div class="section-desc-left">Des formules adaptées à tous les besoins</div>
     
-    <div class="pricing-frame" style="background: #cbc2b7; border-radius: 18px; padding: 24px;">
-        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:1200px; margin:0 auto;">
+    <div class="pricing-frame">
+        <div style="max-width:900px; margin:0 auto;">
             
-            <!-- ===== CARTE 1 : Sport de Combat Enfant ===== -->
-            <div style="background:#fff; border-radius:16px; padding:30px 20px; text-align:center; border:3px solid rgba(255,255,255,0.6); box-shadow:0 8px 30px rgba(0,0,0,0.14);">
-                <div style="width:65px; height:65px; border-radius:50%; background:#3b6e8f; display:flex; align-items:center; justify-content:center; margin:0 auto 10px; color:#fff; font-size:26px;">
-                    <i class="fa-solid fa-child"></i>
-                </div>
-                <div style="font-size:18px; font-weight:700; color:#1a1a2e; letter-spacing:1px; text-transform:uppercase; margin-bottom:3px;">Sport de Combat</div>
-                <div style="font-size:16px; font-weight:700; color:#1a1a2e; margin-bottom:12px;">Enfant</div>
-                
-                <div style="margin-bottom:15px;">
-                    <div style="font-size:14px; color:#7d868c; margin-bottom:2px;">Séance à l'unité</div>
-                    <div style="font-size:32px; font-weight:800; color:#3b6e8f;">500 DA</div>
-                </div>
-                
-                <div style="border-top:2px solid rgba(0,0,0,0.08); padding-top:15px; margin-bottom:12px;">
-                    <div style="font-size:15px; font-weight:600; color:#1a1a2e; margin-bottom:8px;">Forfaits mensuels</div>
-                    <div style="display:flex; justify-content:space-around; font-size:15px; font-weight:700; color:#1a1a2e;">
-                        <div>4 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">2 000 DA</span></div>
-                        <div>8 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 000 DA</span></div>
-                        <div>12 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">4 000 DA</span></div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- ===== CARTE 2 : Fitness ===== -->
-            <div style="background:#fff; border-radius:16px; padding:30px 20px; text-align:center; border:3px solid #3b6e8f; box-shadow:0 8px 30px rgba(59,110,143,0.2);">
-                <div style="width:65px; height:65px; border-radius:50%; background:#3b6e8f; display:flex; align-items:center; justify-content:center; margin:0 auto 10px; color:#fff; font-size:26px;">
-                    <i class="fa-solid fa-person-walking"></i>
-                </div>
-                <div style="font-size:18px; font-weight:700; color:#1a1a2e; letter-spacing:1px; text-transform:uppercase; margin-bottom:3px;">Fitness</div>
-                <div style="font-size:14px; color:#7d868c; margin-bottom:12px;">Zumba / Pilates</div>
-                
-                <div style="margin-bottom:15px;">
-                    <div style="font-size:14px; color:#7d868c; margin-bottom:2px;">Séance à l'unité</div>
-                    <div style="font-size:32px; font-weight:800; color:#3b6e8f;">500 DA</div>
-                </div>
-                
-                <div style="border-top:2px solid rgba(0,0,0,0.08); padding-top:15px; margin-bottom:12px;">
-                    <div style="font-size:15px; font-weight:600; color:#1a1a2e; margin-bottom:8px;">Forfaits mensuels (30 jours)</div>
-                    <div style="display:flex; justify-content:space-around; font-size:15px; font-weight:700; color:#1a1a2e;">
-                        <div>4 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">2 000 DA</span></div>
-                        <div>8 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 000 DA</span></div>
-                        <div>12 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 500 DA</span></div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- ===== CARTE 3 : Musculation / Cardio ===== -->
-            <div style="background:#fff; border-radius:16px; padding:30px 20px; text-align:center; border:3px solid rgba(255,255,255,0.6); box-shadow:0 8px 30px rgba(0,0,0,0.14);">
-                <div style="width:65px; height:65px; border-radius:50%; background:#3b6e8f; display:flex; align-items:center; justify-content:center; margin:0 auto 10px; color:#fff; font-size:26px;">
+            <!-- ===== CARTE UNIQUE ===== -->
+            <div style="background:#fff; border-radius:16px; padding:35px 30px; text-align:center; border:3px solid #3b6e8f; box-shadow:0 8px 30px rgba(59,110,143,0.2);">
+                <div style="width:70px; height:70px; border-radius:50%; background:#3b6e8f; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; color:#fff; font-size:28px;">
                     <i class="fa-solid fa-dumbbell"></i>
                 </div>
-                <div style="font-size:18px; font-weight:700; color:#1a1a2e; letter-spacing:1px; text-transform:uppercase; margin-bottom:3px;">Musculation / Cardio</div>
-                <div style="font-size:14px; color:#7d868c; margin-bottom:12px;">CrossFit / HIIT / Cardio</div>
+                <div style="font-size:22px; font-weight:800; color:#1a1a2e; letter-spacing:2px; text-transform:uppercase; margin-bottom:5px;">Body Power Gym</div>
+                <div style="font-size:14px; color:#7d868c; margin-bottom:20px;">Hommes · Femmes · Enfants</div>
                 
-                <div style="margin-bottom:15px;">
-                    <div style="font-size:14px; color:#7d868c; margin-bottom:2px;">Séance à l'unité</div>
-                    <div style="font-size:32px; font-weight:800; color:#3b6e8f;">500 DA</div>
+                <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin-bottom:20px;">
+                    <div style="background:#f7f3ee; padding:12px; border-radius:10px;">
+                        <div style="font-size:13px; color:#7d868c;">1 fois</div>
+                        <div style="font-size:20px; font-weight:800; color:#3b6e8f;">1 500 DA</div>
+                    </div>
+                    <div style="background:#f7f3ee; padding:12px; border-radius:10px;">
+                        <div style="font-size:13px; color:#7d868c;">2 fois</div>
+                        <div style="font-size:20px; font-weight:800; color:#3b6e8f;">2 200 DA</div>
+                    </div>
+                    <div style="background:#f7f3ee; padding:12px; border-radius:10px;">
+                        <div style="font-size:13px; color:#7d868c;">3 fois</div>
+                        <div style="font-size:20px; font-weight:800; color:#3b6e8f;">2 500 DA</div>
+                    </div>
+                    <div style="background:#f7f3ee; padding:12px; border-radius:10px;">
+                        <div style="font-size:13px; color:#7d868c;">4 fois</div>
+                        <div style="font-size:20px; font-weight:800; color:#3b6e8f;">2 700 DA</div>
+                    </div>
                 </div>
                 
-                <div style="border-top:2px solid rgba(0,0,0,0.08); padding-top:15px; margin-bottom:12px;">
-                    <div style="font-size:15px; font-weight:600; color:#1a1a2e; margin-bottom:8px;">Forfaits mensuels</div>
-                    <div style="display:flex; justify-content:space-around; font-size:15px; font-weight:700; color:#1a1a2e;">
-                        <div>8 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">2 200 DA</span></div>
-                        <div>12 séances<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">1 500 DA</span></div>
-                        <div>Illimité<br><span style="color:#3b6e8f; font-size:20px; font-weight:800;">3 200 DA</span></div>
-                    </div>
+                <div style="border-top:2px solid rgba(0,0,0,0.08); padding-top:18px;">
+                    <div style="font-size:16px; font-weight:700; color:#1a1a2e;">Illimité</div>
+                    <div style="font-size:30px; font-weight:900; color:#3b6e8f;">2 900 DA</div>
+                    <div style="font-size:14px; color:#7d868c; margin-top:4px;">+ 500 DA Tapis</div>
                 </div>
             </div>
             
         </div>
     </div>
 </section>
-<!-- ===== SERVICES - AVEC CADRE (RECTANGLE) ===== -->
+
+<!-- ===== SERVICES (modifié) ===== -->
 <section id="services" class="services-section">
     <div class="section-title-left">
         <span class="light">Nos</span>
         <span class="heavy">Services</span>
     </div>
-    <div class="section-desc-left">Des activités pour tous les âges et tous les niveaux</div>
+    <div class="section-desc-left">Des activités pour tous les niveaux</div>
     
     <div class="services-frame">
         <div class="services-grid">
@@ -1278,7 +1161,7 @@ $services = [
             <?php foreach($gallery_images as $img): ?>
                 <div class="gallery-carousel-slide">
                     <img src="<?php echo $img; ?>" 
-                         alt="Blue Bird Fitness" 
+                         alt="Body Power Gym" 
                          loading="lazy" 
                          onclick="openLightbox('<?php echo $img; ?>')"
                          onerror="this.style.display='none'">
@@ -1296,7 +1179,7 @@ $services = [
 <!-- ===== LIGHTBOX ===== -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-    <img id="lightboxImg" src="" alt="Blue Bird Fitness">
+    <img id="lightboxImg" src="" alt="Body Power Gym">
 </div>
 
 <!-- ===== MAPS ===== -->
@@ -1319,7 +1202,7 @@ $services = [
                 <div class="icon"><i class="fa-solid fa-clock"></i></div>
                 <div class="info">
                     <div class="label">Horaires</div>
-                    <div class="value">Ouvert jusqu'à <strong>23h00</strong></div>
+                    <div class="value">Ouvert jusqu'à <strong>22h00</strong></div>
                 </div>
             </div>
             <div class="detail-item phone">
@@ -1333,7 +1216,7 @@ $services = [
                 <div class="icon"><i class="fa-brands fa-instagram"></i></div>
                 <div class="info">
                     <div class="label">Instagram</div>
-                    <div class="value"><a href="<?php echo $gym_instagram; ?>" target="_blank">@bluebirdfitness</a></div>
+                    <div class="value"><a href="<?php echo $gym_instagram; ?>" target="_blank">@bodypowergym03</a></div>
                 </div>
             </div>
         </div>
@@ -1345,7 +1228,7 @@ $services = [
 
 <!-- ===== FOOTER ===== -->
 <footer>
-    &copy; <?php echo date('Y'); ?> Blue Bird Fitness
+    &copy; <?php echo date('Y'); ?> Body Power Gym
 </footer>
 
 <!-- ===== SCRIPTS ===== -->
